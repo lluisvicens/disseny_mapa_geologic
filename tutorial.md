@@ -7,3 +7,5 @@ Pas a pas
 ---------
 
 1. En primer lloc caldrà obrir QGIS, i crear un nou projecte en blanc tot configurant el sistema de referencia de coordenades amb el codi **EPSG 25831** (UTM 31N ETRS 89).
+
+![configura projecte](_static/fig1.png "Configura el CRS del projecte")
