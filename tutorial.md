@@ -18,10 +18,15 @@ A continuació, s'explica com crear un mapa geològic pas a pas, utilizant el so
 
 ### Descarregar la cartografia de treball
 
-4. En primer lloc, caldrà descarregar la base municipal de tot Catalunya. Dirigeix-te a la barra d'eines que acabes d'instal·lar i fes un clic sobre el botó XXXX per accedir al catàleg de dades a les que es pot accedir. Desplaça't pel menú *Mapes de fons > Divisions administratives > Municipis > Municipis 1:5000*
+4. En primer lloc, caldrà descarregar la base municipal de tot Catalunya. Dirigeix-te a la barra d'eines que acabes d'instal·lar i fes un clic sobre el botó *Background maps* per accedir al catàleg de dades que ofereix el complement. Desplaça't pel menú *Background maps > Administrative divisions > Municipalities > Municipalities 1:5000*
 
 ![fig4](_static/fig4.png "Obten dades")
    
-6. Seleccionar el municipi de Vilobí d'Onyar i exportar la selecció a una nova capa
+5. A continuació centraràs la vista sobre el terme municipal de Viulobí d'Onyar. Per a dur a terme aquesta acció, cal que situis el cursor dins de la caixa de cerca (*search*) del complement, i escriguis el nom del municipi. A continuació, prem la tecla retorn per tal d'obtenir el resultat de la cerca, selecciona la primera opció: **Cap de municipi**. Per tal de confirmar la selecció i centrar la vista al municipi, fes un clic a **ok**.
+
+![fig5](_static/fig5.png "Selecciona el resultat")
+
+![fig6](_static/fig6.png "Centra la vista")
+
 7. Descarregar la base geològica escala 1:25000 de l'ICGC
 8. Retallar la base geològica amb el contorn del límit municipal (batch process o procés per lots)
