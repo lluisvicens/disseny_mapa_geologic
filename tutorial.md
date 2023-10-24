@@ -2,7 +2,7 @@
 
 A continuació, s'explica com crear un mapa geològic pas a pas, utilizant el software **QGIS** i el complement **Open ICGC**.
 
-## Configurar QGIS
+## 1. Configurar QGIS
 
 1. En primer lloc caldrà obrir QGIS, i crear un nou projecte en blanc tot configurant el sistema de referencia de coordenades amb el codi **EPSG 25831** (UTM 31N ETRS 89).
 
@@ -16,7 +16,7 @@ A continuació, s'explica com crear un mapa geològic pas a pas, utilizant el so
 
 ![fig3](_static/fig3.png "Aparença del complement Open ICGC")
 
-### Descarregar la cartografia de treball
+### 2. Descarregar la cartografia de treball
 
 4. En primer lloc, caldrà descarregar la base municipal de tot Catalunya. Dirigeix-te a la barra d'eines que acabes d'instal·lar i fes un clic sobre el botó *Download tool* per accedir al catàleg de dades que ofereix el complement. Desplaça't pel menú *Download tool > Administrative divisions vectorial data (zip)*.
 
@@ -42,7 +42,7 @@ A continuació, s'explica com crear un mapa geològic pas a pas, utilizant el so
 
 10. Per finalitzar el procés de descàrrega, el complement et demanarà en quina carpeta vols desar les dades. Crea'n una, assigna-li el nom que creguis oportú, i selecciona-la. En finalitzar el procés de descàrrega, el geològic 25k es carregarà automàticament a la finestra de mapa.
 
-### Adequar l'extensió de les capes de geologia, a l'extensió del municipi
+### 3. Adequar l'extensió de les capes de geologia, a l'extensió del municipi
 
 11. Degut a que únicament t'interessen aquelles capes que pertanyen al municipi de Vilobí d'Onyar, i per tal de no sobrecarregar l'ordinador gestionant una capa molt més gran del necessari, hauràs d'aplicar un geoprocés conegut com a **retall** o **clip**. Fixa't que, el mapa geològic es composa de diverses capes i com que l'eina de retall només pot actuar d'una capa en una capa, el retall el duràs a terme aplicant un procés per lots, o en *batch*.
 
@@ -62,4 +62,22 @@ A continuació, s'explica com crear un mapa geològic pas a pas, utilizant el so
 
 ![fig12](_static/fig12.png "Organització del panell de capes")
 
+16. Per tal de retallar les 11 capes del geològic amb el contorn del terme municipal de vilobí, activa el menú *Vector > Geoprocessing tools > Clip...*. En la finestra emergent, fes un clic sobre el botó *Run as batch process*. Aquesta nova finestra compta amb tres columnes que caldria omplir adequadament per tal de poder fer tots els retalls a la vegada. Les columnes a parametritzar són *Input layer* (o la capa que es vol retallar), *Overlay layer* (o la capa que es vol fer servir com a contorn per al retall) i *Clipped* (que serà la capa de sortida una vegada aplicat el retall).
 
+17. Per començar, faràs un clic sobre el botó *Autofill...* de la columna input layer i d'entre les diferents opcions, selecciona **Select from Open Layers**. A la finestra emergent, seleccionaràs les onze capes del geològic, i acceptaràs la selecció fent clic a **Ok**. 
+
+![fig13](_static/fig13.png "selecció de les capes a retallar")
+
+18. A continuació, a la columna *Overlay layer*, selecciona la capa **vilobi** al primer registre i a continuació, fes un clic sobre el botó *Autofill...* i selecciona la opció *Fill down*. La finestra de l'eina presentarà el següent aspecte:
+
+![fig14](_static/fig14.png "Configuració de l'eina de retall per lots")
+
+19. Per acabar, a la columna *Clipped*, fes un clic sobre el botó que mostra els tres punts, i en la finestra emergent, assigna el nom de la capa de sortida i que en realitat utilitzaràs com a prefix (p.e. **vilobi_**) i en acceptar, a la nova finestra que apareixerà (*Autofill settings*) escolliràs l'opció *Fill with parameter values* i com a paràmetres a usar, escull la opció que duu per nom *Input layer*.
+
+20. Una vegada configurat tot el quadre, hauria de presentar el següent aspecte:
+
+![fig15](_static/fig15.png "Aspecte del quadre de diàleg de l'eina")
+
+21. Abans de donar per finalitzat el procés, assegura't que tinguis activada la casella *Load layers on completion* i fes clic al botó *Run*.
+
+22.  
