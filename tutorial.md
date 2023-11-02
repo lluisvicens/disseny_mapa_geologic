@@ -79,3 +79,21 @@ A continuació, s'explica com crear un mapa geològic pas a pas, utilizant el so
 21. Una vegada configurada la totalitat de la finestra de l'eina, i abans de donar per finalitzat el procés, assegura't que tinguis activada la casella **Load layers on completion** i fixa't com molt probablement, la primera filera estigui repetida. Així doncs, caldrà que eliminis aquest primer registre i, a continuació, facis un clic sobre el botó **Run**.
 
 ![fig16](_static/layout16.gif "Aspecte del quadre de diàleg de l'eina")
+
+22. La següent tasca que has de dur a terme, és la de colocar les capes en l'ordre adequat. Per tant, prenent de referència l'ordre de les capes descarregades, es tracta de moure les capes retallades al nivell que li corresponen. Per a fer-ho només cal que seleccionis la capa a moure, facis un clic i, sense deixar anar el botó esquerre del ratolí, moguis la capa a la seva nova posició:
+
+![fig17](_static/layout17.gif "Organització de les capes")
+
+23. Tan bon punt tinguis totes les capes ven organizatdes, pensa a desar el projecte per tal de fixar la seva posició dins del panell de capes.
+
+24. A continuació, caldrà traspassar la simbologia original del mapa geològic a les capes que has retallat i que en carregar-se al panell de capes, ho fan per defecte segons una simbologia única. Per a traspassar la simbologia caldrà que moguis el cursor sobre cadascuna de les capes originals, facis un clic amb el botó dret del ratolí i seleccionis l'opció *Styles > Copy Styles ... > All Style Categories*. Amb l'estil copiat, mou ara el cursor a la capa retallada corresponent, fesde nou un clic amb el botó dret del ratolí, i selecciona l'opció *Styles > Paste Styles ... > All Style Categories*
+
+![fig18](_static/layout18.gif "Traspàs d'estils")
+
+25. Aquesta operació l'hauràs de repetir tantes vegades com capes tinguis al teu panell de capes. 
+
+
+
+
+
+    
