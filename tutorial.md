@@ -60,22 +60,22 @@ A continuació, s'explica com crear un mapa geològic pas a pas, utilizant el so
 
 ![fig11](_static/layout11.gif "Organització del panell de capes")
 
-16. Per tal de retallar les 11 capes del geològic amb el contorn del terme municipal de vilobí, activa el menú *Vector > Geoprocessing tools > Clip...*. En la finestra emergent, fes un clic sobre el botó *Run as batch process*. Aquesta nova finestra compta amb tres columnes que caldria omplir adequadament per tal de poder fer tots els retalls a la vegada. Les columnes a parametritzar són *Input layer* (o la capa que es vol retallar), *Overlay layer* (o la capa que es vol fer servir com a contorn per al retall) i *Clipped* (que serà la capa de sortida una vegada aplicat el retall).
+16. Per tal de retallar les onze capes del geològic amb el contorn del terme municipal de vilobí, activa el menú *Vector > Geoprocessing tools > Clip...*. En la finestra emergent, fes un clic sobre el botó *Run as batch process*. Aquesta nova finestra compta amb tres columnes que caldria omplir adequadament per tal de poder fer tots els retalls a la vegada. Les columnes a parametritzar són *Input layer* (o la capa que es vol retallar), *Overlay layer* (o la capa que es vol fer servir com a contorn per al retall) i *Clipped* (que serà la capa de sortida una vegada aplicat el retall).
 
-17. Per començar, faràs un clic sobre el botó *Autofill...* de la columna input layer i d'entre les diferents opcions, selecciona **Select from Open Layers**. A la finestra emergent, seleccionaràs les onze capes del geològic, i acceptaràs la selecció fent clic a **Ok**. 
+![fig12](_static/layout12.png "Aspecte original de l'eina de retall per lots")
 
-![fig13](_static/fig13.png "selecció de les capes a retallar")
+17. Per començar, fes un clic sobre el botó *Autofill...* de la columna **[input layer]** i d'entre les diferents opcions, selecciona **Select from Open Layers**. A la finestra emergent, selecciona les onze capes del geològic, i accepta la selecció fent clic a **D'acord**. 
 
-18. A continuació, a la columna *Overlay layer*, selecciona la capa **vilobi** al primer registre i a continuació, fes un clic sobre el botó *Autofill...* i selecciona la opció *Fill down*. La finestra de l'eina presentarà el següent aspecte:
+![fig13](_static/layout13.png "Selecció de les capes a retallar")
 
-![fig14](_static/fig14.png "Configuració de l'eina de retall per lots")
+18. A continuació, a la columna *Overlay layer*, obre el desplegable de la primera línia, y selecciona la capa **vilobi**. A continuació, fes un clic sobre el botó *Autofill...* i selecciona la opció *Fill down*.
 
-19. Per acabar, a la columna *Clipped*, fes un clic sobre el botó que mostra els tres punts, i en la finestra emergent, assigna el nom de la capa de sortida i que en realitat utilitzaràs com a prefix (p.e. **vilobi_**) i en acceptar, a la nova finestra que apareixerà (*Autofill settings*) escolliràs l'opció *Fill with parameter values* i com a paràmetres a usar, escull la opció que duu per nom *Input layer*.
+![fig14](_static/layout14.gif "Configuració de l'eina de retall per lots")
 
-20. Una vegada configurat tot el quadre, hauria de presentar el següent aspecte:
+19. Per acabar, a la columna *Clipped*, fes un clic sobre el botó que mostra els tres punts i, a la finestra emergent, assigna el nom de la capa de sortida (indica que el format sigui un **geojson**). En realitat, el que faràs es definir un prefix (p.e. **vilobi_**) i en acceptar, a la nova finestra emergent (*Autofill settings*) caldrà que escullis l'opció *Fill with parameter values* i com a paràmetre a utilitzar, selecciona l'opció que duu per nom *Input layer*.
 
-![fig15](_static/fig15.png "Aspecte del quadre de diàleg de l'eina")
+![fig15](_static/layout15.gif "Aspecte del quadre de diàleg de l'eina")
 
-21. Abans de donar per finalitzat el procés, assegura't que tinguis activada la casella *Load layers on completion* i fes clic al botó *Run*.
+21. Una vegada configurada la totalitat de la finestra de l'eina, i abans de donar per finalitzat el procés, assegura't que tinguis activada la casella **Load layers on completion** i fixa't com molt probablement, la primera filera estigui repetida. Així doncs, caldrà que eliminis aquest primer registre i, a continuació, facis un clic sobre el botó **Run**.
 
-22.  
+![fig16](_static/layout16.gif "Aspecte del quadre de diàleg de l'eina")
