@@ -74,7 +74,7 @@ A continuació, s'explica com crear un mapa geològic pas a pas, utilizant el so
 
 19. Per acabar, a la columna *Clipped*, fes un clic sobre el botó que mostra els tres punts i, a la finestra emergent, assigna el nom de la capa de sortida (indica que el format sigui un **geojson**). En realitat, el que faràs es definir un prefix (p.e. **vilobi_**) i en acceptar, a la nova finestra emergent (*Autofill settings*) caldrà que escullis l'opció *Fill with parameter values* i com a paràmetre a utilitzar, selecciona l'opció que duu per nom *Input layer*.
 
-![layout15](_static/layout15.gif "Aspecte del quadre de diàleg de l'eina")
+![layout15_1](_static/layout15_1.gif "Aspecte del quadre de diàleg de l'eina")
 
 21. Una vegada configurada la totalitat de la finestra de l'eina, i abans de donar per finalitzat el procés, assegura't que tinguis activada la casella **Load layers on completion** i fixa't com molt probablement, la primera filera estigui repetida. Així doncs, caldrà que eliminis aquest primer registre i, a continuació, facis un clic sobre el botó **Run**.
 
