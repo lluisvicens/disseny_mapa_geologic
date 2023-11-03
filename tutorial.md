@@ -92,7 +92,7 @@ A continuació, es mostra com dissenyar un mapa geològic pas a pas, utilizant e
 
 24. Aquesta operació l'hauràs de repetir tantes vegades com capes tinguis al teu panell de capes. En finalitzar, pots eliminar definitivament les capes originales del mapa geològic per a tot Catalunya i deixar únicament al panell de capes, el terme municipal de Vilobí d'Onyar i les capes retallades.  
 
-### 4. La preparació de les capes
+### 4. La preparació de la capa de geologia
 
 25. El mapa geològic de Catalunya s'organitza i es serveix en fulls. I malgrat que el complement **Open IGCG** el serveix en una capa única, el seu origen és la distribució per full i és per això que un mateix polígon que pertanyi a dos fulls diferents, apareix tallat, mostrant un límit que realment no existeix:
 
@@ -108,16 +108,27 @@ A continuació, es mostra com dissenyar un mapa geològic pas a pas, utilizant e
 
  29. Aquesta capa ja està preparada per a utilitzar-la en una composició o disseny de mapa. Abans però, descarregaràs un model digital d'elevacions de la zona d'estudi per tal d'emprar aquesta capa com a referència i context. 
  
- 30. Sitúa el cursor sobre la capa **temporal** que duu per nom Dissolve, i fes un clic sobre el botó dret del ratolí. Al menú emergent, escull l'opció *Make permanent* per desar-la. Escull del format geojson, i assigna-li per exemple el nom **vilobi_fop**.
+ 30. Sitúa el cursor sobre la capa **temporal** que duu per nom Dissolve, i fes un clic sobre el botó dret del ratolí. Al menú emergent, escull l'opció *Make permanent* per desar-la. Escull del format geojson, i assigna-li per exemple el nom **vilobi_fqp**.
 
 ![fig21](_static/layout21.png "Consolidar una capa temporal")
 
-31. Aprofita per actualitzar el nom de la capa (botó dret i *Rename layer* o bé, tecla *F2* i canvia el nom a **vilobi_fop**). Després fés un clic amb el botó dret del ratolí sobre la mateixa capa i escull l'opció *Zoom to Layer(s)* per veure'n la seva totalitat. L'escala de visualització estarà a l'entorn de 1:38000. Modifica-la manualment a 1:60000 per tal d'abarcar més territori.
+31. Aprofita per actualitzar el nom de la capa (botó dret i *Rename layer* o bé, tecla *F2* i canvia el nom a **vilobi_fqp**). Després fés un clic amb el botó dret del ratolí sobre la mateixa capa i escull l'opció *Zoom to Layer(s)* per veure'n la seva totalitat. L'escala de visualització estarà a l'entorn de 1:38000. Modifica-la manualment a 1:60000 per tal d'abarcar més territori.
 
 ![fig22](_static/layout22.gif "Ampliar l'escala de visualització")
 
-31. A continuació vés de nou a la barra d'eines **Open ICGC** i desplega l'eina de descarrega. D'entre totes les opcions escull *Digital terrain model raster data > Digital model terrain 5m*.
+31. A continuació vés de nou a la barra d'eines **Open ICGC** i desplega l'eina de descarrega. D'entre totes les opcions escull *Digital terrain model raster data > Digital model terrain 5m*. A la finestra emergent selecciona l'opció **Area** per definir la zona a descarregar i, a continuació, dibuixa un rectangle que sobrepassi els límits de la capa vectorial. Espera que finalitzi el procés de descàrrega i es mostri el model digital d'elevacions a la finestra de mapa.
+
 
 ![fig23](_static/layout23.gif "Consolidar una capa temporal")
 
-    
+### 5. La preparació del model digital d'elevacions
+
+32. La següent tasca que duràs a terme és la de mofificar la paleta o l'aparença del model digital d'elevacions que acabes de descarregar i que per defecte, es mostra en una paleta de blancs i negres. Fes un doble clic sobre la capa raster per accedir a la finestra de les propietats, fes un clic sobre l'apartat **Symbology** i modifica els paràmetres de manera que a l'apartat *Render type* s'hi mostri el valor **Hillshade**. En l'apartat *Layer Rendering*, paràmetre *Blending mode*, desplega les opcions possibles i escull **Multiply**. Finalment en l'apartat *Resampling*, modifica els valors de *Zoomed: in* i *out* a **Cubic**. Finalment modifica el valor del paràmetre *Oversampling* a **6**.
+
+![fig24](_static/layout24.png "Modificar l'aparença del model del terreny")
+
+33. Finalment, i abans de passar al disseny del mapa, activa les capes **vilobi_gt125mv10sh0fbp1r010_202101**, **vilobi_gt125mv10sh0ffl1r010_202101**, **vilobi_gt125mv10sh0fbl1r010_202101** i **vilobi_gt125mv10sh0fql1r010_202101**. Assegura't que la capa **vilobi_fqp** queda per sota de **vilobi_gt125mv10sh0fql1r010_202101**. De fet, si vols pots reanomenar totes les capes anteriors a **fbp**, **ffl**, **fbl**, **fql** i **fqp**, i esborrar la resta de capes a excepció del límit municipal i el model digital d'elevacions, per tal que el teu panell de capes tingui el següent aspecte:
+
+![fig25](_static/layout25.png "Aspecte del panell de capes")
+
+34. 
