@@ -137,6 +137,10 @@ A continuació, es mostra com dissenyar un mapa geològic pas a pas, utilizant e
 
 35. Automàticament apareixerà una nova finestra de QGIS, amb un llenç en blanc. Aquest és el marc de la teva composició. La primera tasca que cal configurar és el tamany o mida de la composició (p.e. Din A4), i la seva orientació (vertical o hortizontal). Per a poder configurar aquests aspectes, cal fer un clic sobre el disseny en blanc, amb el botó dret del ratolí, i seleccionar l'opció *Page Properties*. Automàticament apareixerà una nova pestanya a la dreta de la finestra (*Item properties*) on indicar la mida i la orientació.
 
-36. A continuació, incorporaràs la vista de mapa al nou disseny. Per a fer això caldrà que seleccionis l'eina d'afegir mapa a la barra d'eines principal, i dibuixis l'espai que haurà d'ocupar (més tard, sempre és possible modificar les mides del *frame* que conté el mapa).
+36. A continuació, incorporaràs la vista de mapa al nou disseny. Per a fer això caldrà que seleccionis l'eina d'afegir mapa a la barra d'eines principal, i dibuixis l'espai que haurà d'ocupar en el context del disseny. En qualsevol moment, sempre que sigui necessari, és possible modificar les mides del *frame* que conté el mapa.
 
 ![fig26](_static/layout26.gif "Incorporar un mapa al disseny")
+
+37. Una vegada incoporat el mapa, la següent tasca és ajustar-lo al requadre dibuixat. Aquesta és una qüestió que es pot resoldre amb l'escala de visualizació. Per tant, cal que seleccionis el mapa, per tal de poder accedir a les propietats de l'element (**mapa**) i modificar manualment l'escala de visualizatció a **1:50.000**.
+
+![fig27](_static/layout27.gif "Modificar l'escala de mapa")
