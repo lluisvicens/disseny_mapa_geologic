@@ -131,4 +131,6 @@ A continuació, es mostra com dissenyar un mapa geològic pas a pas, utilizant e
 
 ![fig25](_static/layout25.png "Aspecte del panell de capes")
 
+### 6. Dissenyar un mapa geològic
+
 34. 
