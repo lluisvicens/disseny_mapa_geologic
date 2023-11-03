@@ -98,7 +98,9 @@ A continuació, es mostra com dissenyar un mapa geològic pas a pas, utilizant e
 
  ![fig19](_static/layout19.gif "Identificació de polígons retallats")
  
-26. Per tal de solucionar aquest contratemps, aplicaràs un nou geoprocessament que duu per nom **Dissolve** o dissolució, i que et permetrà fusionar en una única entitat, tots aquells polígons que comparteixen idèntics atributs. En primer lloc doncs, activaras la capa que duu per nom **vilobi_gt125mv10sh0fqp1r010_202101** i a continuació aniràs al menú *Vector > Geoprocessing Tools > Dissolve ...*. 
+26. Per tal de solucionar aquest contratemps, aplicaràs un nou geoprocessament que duu per nom **Dissolve** o dissolució, i que et permetrà fusionar en una única entitat, tots aquells polígons que comparteixen idèntics atributs. En primer lloc doncs, activaràs la capa que duu per nom **vilobi_gt125mv10sh0fqp1r010_202101** i a continuació, vés al menú *Vector > Geoprocessing Tools > Dissolve ...*. 
+
+27. A la finestra emergent, com a *input layer* escolliràs la capa **vilobi_gt125mv10sh0fqp1r010_202101** que és la que hauria d'aparèixer per defecte i l'has seleccionat abans de cridar l'eina *Dissolve*. En l'apartat *Dissolve field(s)* selecciona la columna **[CODI_CAS]**. Obre l'apartat *Advanced Parameters* i activa la casella *Keep disjoint features separate* per tal de fusionar només aquelles entitats que compartint el mateix valor d'atrubut a la columna seleccionada, a més estan en contacte. Deixa que la capa de sortida sigui una capa temporal i executa l'eina.
 
 
 
