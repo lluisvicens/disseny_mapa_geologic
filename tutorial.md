@@ -96,14 +96,28 @@ A continuació, es mostra com dissenyar un mapa geològic pas a pas, utilizant e
 
 25. El mapa geològic de Catalunya s'organitza i es serveix en fulls. I malgrat que el complement **Open IGCG** el serveix en una capa única, el seu origen és la distribució per full i és per això que un mateix polígon que pertanyi a dos fulls diferents, apareix tallat, mostrant un límit que realment no existeix:
 
- ![fig19](_static/layout19.gif "Identificació de polígons retallats")
+![fig19](_static/layout19.gif "Identificació de polígons retallats")
  
 26. Per tal de solucionar aquest contratemps, aplicaràs un nou geoprocessament que duu per nom **Dissolve** o dissolució, i que et permetrà fusionar en una única entitat, tots aquells polígons que comparteixen idèntics atributs. En primer lloc doncs, activaràs la capa que duu per nom **vilobi_gt125mv10sh0fqp1r010_202101** i a continuació, vés al menú *Vector > Geoprocessing Tools > Dissolve ...*. 
 
 27. A la finestra emergent, com a *input layer* escolliràs la capa **vilobi_gt125mv10sh0fqp1r010_202101** que és la que hauria d'aparèixer per defecte i l'has seleccionat abans de cridar l'eina *Dissolve*. En l'apartat *Dissolve field(s)* selecciona la columna **[CODI_CAS]**. Obre l'apartat *Advanced Parameters* i activa la casella *Keep disjoint features separate* per tal de fusionar només aquelles entitats que compartint el mateix valor d'atrubut a la columna seleccionada, a més estan en contacte. Deixa que la capa de sortida sigui una capa temporal i executa l'eina.
 
+28. La nova capa que apareixerà al panell de capes amb el nom **Dissolved**, es carrega amb simbologia única, per la qual cosa, la primera cosa que faràs és copiar la simbologia de la capa original i enganxar-la a la nova capa. Comprova que ara, en aquesta capa els polígons ja no estàn dividits en fulls:
 
+![fig20](_static/layout20.gif "Identificació de polígons dissolts")
 
+ 29. Aquesta capa ja està preparada per a utilitzar-la en una composició o disseny de mapa. Abans però, descarregaràs un model digital d'elevacions de la zona d'estudi per tal d'emprar aquesta capa com a referència i context. 
+ 
+ 30. Sitúa el cursor sobre la capa **temporal** que duu per nom Dissolve, i fes un clic sobre el botó dret del ratolí. Al menú emergent, escull l'opció *Make permanent* per desar-la. Escull del format geojson, i assigna-li per exemple el nom **vilobi_fop**.
 
+![fig21](_static/layout21.png "Consolidar una capa temporal")
+
+31. Aprofita per actualitzar el nom de la capa (botó dret i *Rename layer* o bé, tecla *F2* i canvia el nom a **vilobi_fop**). Després fés un clic amb el botó dret del ratolí sobre la mateixa capa i escull l'opció *Zoom to Layer(s)* per veure'n la seva totalitat. L'escala de visualització estarà a l'entorn de 1:38000. Modifica-la manualment a 1:60000 per tal d'abarcar més territori.
+
+![fig22](_static/layout22.gif "Ampliar l'escala de visualització")
+
+31. A continuació vés de nou a la barra d'eines **Open ICGC** i desplega l'eina de descarrega. D'entre totes les opcions escull *Digital terrain model raster data > Digital model terrain 5m*.
+
+![fig23](_static/layout23.gif "Consolidar una capa temporal")
 
     
