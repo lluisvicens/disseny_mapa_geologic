@@ -133,4 +133,8 @@ A continuació, es mostra com dissenyar un mapa geològic pas a pas, utilizant e
 
 ### 6. Dissenyar un mapa geològic
 
-34. 
+34. Per accedir al dissenyador de mapes de QGIs, cal fer-ho des del menú *Project > New Print Layout ...*. A la finestra flotant emergent, assigna un nou a la nova composició (p.e. **mapa1**), i accepta.
+
+35. Automàticament aparaeixerà una nova finestra de QGIS, amb un llenç en blanc. Aquest és el marc de la teva composició. La primera tasca que cal configurar és el tamany o mida de la composició (p.e. Din A4), i la seva orientació (vertical o hortizontal). Per a poder configurar aquests aspectes, cal fer un clic sobre el disseny en blanc, amb el botó dret del ratolí, i seleccionar l'opció *Page Properties*. Automàticament apareixerà una nova pestanya a la dreta de la finestra (*Item properties*) on indicar la mida i la orientació.
+
+36. 
