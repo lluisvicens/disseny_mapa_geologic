@@ -144,3 +144,25 @@ A continuació, es mostra com dissenyar un mapa geològic pas a pas, utilizant e
 37. Una vegada incoporat el mapa, la següent tasca és ajustar-lo al requadre dibuixat. Aquesta és una qüestió que es pot resoldre amb l'escala de visualizació. Per tant, cal que seleccionis el mapa, per tal de poder accedir a les propietats de l'element (**mapa**) i modificar manualment l'escala de visualizatció a **1:50.000**.
 
 ![fig27](_static/layout27.gif "Modificar l'escala de mapa")
+
+38. La següent tasca que duràs a terme, seguint el mateix procediment que en el cas del mapa, és la incorporació de la llegenda. Primer dibuixaràs on ha d'anar situada la llegenda i, a continuació, en podràs modificar tots els aspectes que consideris oportuns.
+
+![fig28](_static/layout28.gif "Incorporar la llegenda de mapa")
+
+39. La lleganda actual ocupa molt espai perquè mostra la totalitat dels elements, capes i categories presents al panell de capes. I està sincronitzada de manera que qualsevol modificació en els elements del panell de capes de QGIS, té una traslació directa a la llegenda. Per evitar aquest comportament i poder editar el contingut de la llegenda de manera manual cal que en primer lloc, desactivis la casella **Auto update**. 
+
+![fig29](_static/layout29.gif "Desactivar actualització automàtica de la llegenda")
+
+40. En primer lloc, pots eliminar algunes de les capes i entrades que no cal que estiguin presents a la llegenda, com pot ser el cas del grup Download, la capa relativa al model digital d'elevacions, o el terme municipal del municipi. A més, activaràs la casella *Only show items inside linked maps* per tal de filtrar el contingut de les capes i que només es mostrin aquelles categories presents en les capes. Recorda que la capa original es de tot Catalunya i per tant, la capa original conté moltes categories que no estan presents a la teva imatge i allarguen innecessàriament la llegenda .
+
+![fig30](_static/layout30.gif "Reorganitzar la llegenda")
+
+41. A continuació, pots afegir un nom a la llegenda, i modificar el valor de mida dels textos que en formen part.
+
+![fig31](_static/layout31.gif "Reorganitzar la llegenda")
+
+42. I modificar els noms dels elements que hi apareixen:
+
+![fig32](_static/layout32.gif "Reorganitzar la llegenda")
+
+
